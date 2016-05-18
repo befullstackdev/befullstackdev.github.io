@@ -6,9 +6,10 @@ description: >
     Trying to be A full-stack developer. # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://befullstackdev.github.io" # the base hostname & protocol for your site
-twitter_username: @SkyKaiyu # your Twitter username
-github_username: kaiyulee # your Github username
-disqus_username: kaiyulee # your disqus username
+#url: "http://127.0.0.1:4000" # the base hostname & protocol for your site
+twitter_username: "@SkyKaiyu" # your Twitter username
+github_username: "kaiyulee" # your Github username
+disqus_username: "kaiyulee" # your disqus username
 
 google-analytics:  # add it if you have one
 
