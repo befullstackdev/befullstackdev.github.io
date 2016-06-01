@@ -91,7 +91,9 @@ Note that the FirePHPHandler is called first as it is added on top of the stack.
 
 ## 添加额外的数据到记录
 Monolog 提供两种方法来添加额外的信息到简单的文本信息（along the simple textual message）。
-#### 使用日志上下文
+
+### 使用日志上下文
+
 第一种，即当前日志上下文，允许传递一个数组作为第二个参数，这个数组的数据是额外的信息：
 {% highlight php %}
 <?php
@@ -99,7 +101,9 @@ Monolog 提供两种方法来添加额外的信息到简单的文本信息（alo
 $logger->addInfo('Adding a new user', array('username' => 'Seldaek'));
 {% endhighlight %}
 简单的Handler（SteamHandler）会简单的将数组格式化为字符串，功能丰富点的Handler（FirePHP）可以搞得更好看。
-#### 使用 processors
+
+### 使用 processors
+
 Processors 可以是任何可调用的方法（回调）。它们接受`$record`作为参数，然后返回它（`$record`）,返回之前，即是我们添加**额外信息**的操作，在这里，这个操作是改变`$record`的`extra`key的值。像这样：
 {% highlight php %}
 <?php
