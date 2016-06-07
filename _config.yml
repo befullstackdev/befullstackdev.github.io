@@ -8,7 +8,7 @@ url: "https://befullstackdev.github.io" # the base hostname & protocol for your 
 #url: "http://127.0.0.1:4000" # the base hostname & protocol for your site
 twitter_username: "@SkyKaiyu" # your Twitter username
 github_username: "kaiyulee" # your Github username
-disqus_username: "kaiyulee" # your disqus username
+disqus_username: "befullstackdev" # your disqus username
 
 google-analytics:  # add it if you have one
 

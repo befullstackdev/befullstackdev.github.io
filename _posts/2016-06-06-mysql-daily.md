@@ -1,6 +1,8 @@
 ---
 layout: post
 title: MySQL 的日常使用
+comments: true
+finished: true
 ---
 
 
