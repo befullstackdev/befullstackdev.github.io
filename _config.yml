@@ -1,5 +1,4 @@
-# Site settings
-title: 小强中国
+# Site seonfig强中国
 name: 小强中国 # your name
 email: sky.craper@foxmail.com # your email address
 description: Trying to be A full-stack developer. 
@@ -17,5 +16,3 @@ skillstree: true # turn on or off the skills tree in about page
 # Build settings
 permalink: none
 markdown: kramdown
-kramdown:
-  input: GFM
