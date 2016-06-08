@@ -4,7 +4,8 @@ layout: default
 
   <header class="post-header">
 
-    <center><div class="post-title" itemprop="name headline">{{ page.title }}</div>
+    <div style="text-align: center;">
+		<div class="post-title" itemprop="name headline">{{ page.title }}</div>
 
 		<div class="post-meta"><i class="fa fa-calendar-o"></i> <time datetime="{{ page.date | date_to_string }}" itemprop="datePublished">{{ page.date | date: "%b %-d %Y" }}</time>
 
@@ -20,17 +21,17 @@ layout: default
 		<a class="post-tags-item" href="{{ site.url }}{{ site.baseurl }}/tags/">{{ tag }}</a>
         {% endfor %}
 	{% endif %}</div>
-    </center>
+    </div>
     
 </header>
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 <div class="post-content">
-    <center>
+    <div style="text-align: center;">
 	{% if page.subtitle %}
 	<p>{{ page.subtitle }}</p>
 	{% endif %}
-    </center>
+    </div>
 	<h2>目录</h2>
 </div>
 
