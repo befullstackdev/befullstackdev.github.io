@@ -58,15 +58,15 @@ finished: true
 
 **增加用户及权限**
 
-{% highlight mysql %}
-GRANT ALL ON *.* TO 'username'@'hostname' IDENTIFIED BY 'username' WITH GRANT OPTION;
+```sql
+GRANT ALL ON *.* TO 'username'@'hostname' IDENTIFIED BY 'password' WITH GRANT OPTION;
 # 然后刷新权限
 flush privileges;
-{% endhighlight %}
-
+``` 
 **删除用户权限**
-{% highlight mysql %}
+
+```sql
 REVOKE ALL ON *.* FROM 'username'@'hostname';
 # 然后刷新权限
 flush privileges;
-{% endhighlight %}
+```
