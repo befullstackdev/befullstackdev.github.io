@@ -1,6 +1,4 @@
----
-layout: post
-title: Laravel TokenMismatchException 错误排查
+--- layout: post title: Laravel TokenMismatchException 错误排查
 category: laravel
 comments: true
 finished: true
@@ -24,3 +22,13 @@ TokenMismatchException in VerifyCsrfToken.php file...
 1. 针对 `1` 的情况, 最简单,表单中添加即可;
 2. 针对 `2` 的情况, 重新生成 `APP_KEY`, `php artisan key:generate`
 
+
+补充:
+
+`config/session.php` 中的`domain`是否正确, 我有一次就是忘记了这个配置更改成当前域名.建议在 env 中设置 `SESSION_DOMAIN`, 然后在`config/session.php`中这样改:
+
+```php
+
+'domain' => env('SESSION_DOMAIN', 'localhost')
+
+```
