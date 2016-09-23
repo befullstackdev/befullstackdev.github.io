@@ -1,4 +1,6 @@
---- layout: post title: Laravel TokenMismatchException 错误排查
+--- 
+layout: post 
+title: Laravel TokenMismatchException 错误排查
 category: laravel
 comments: true
 finished: true
